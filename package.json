@@ -1,0 +1,28 @@
+{
+  "name": "apkstart",
+  "productName": "ApkStart",
+  "version": "0.5.8",
+  "description": "极致轻量的 Windows 安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行",
+  "main": "src/main.js",
+  "author": "RoutineMiku",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/RoutineMiku/apkstart#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khang2309/apk_desktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RoutineMiku/apkstart/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "win32",
+    "linux"
+  ],
+  "dependencies": {
+    "@napi-rs/lzma": "^1.5.3"
+  }
+}

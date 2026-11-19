@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self' 'unsafe-inline'; script-src 'self'" />
+<title>ApkStart</title>
+<link rel="stylesheet" href="splash.css" />
+</head>
+<body>
+<div class="splash" id="splash">
+  <!-- Logo 区域 -->
+  <div class="logo-wrap">
+    <img class="logo" id="logo" src="assets/logo.png" alt="ApkStart" draggable="false" />
+    <div class="brand">ApkStart</div>
+    <div class="tagline">Trình khởi chạy ứng dụng Android trên Windows</div>
+  </div>
+
+  <!-- 进度条 -->
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- 状态文字 -->
+  <div class="status" id="status">Đang chuẩn bị…</div>
+
+  <!-- 首次安装提示（默认隐藏，由主进程控制显示） -->
+  <div class="first-run" id="firstRun" hidden>
+    <div class="first-run-title" id="firstRunTitle">Lần đầu sử dụng · Đang tự động cấu hình</div>
+    <ul class="first-run-list" id="firstRunList">
+      <li>Tải Android runtime engine (~200MB, chỉ một lần)</li>
+      <li>Tải ảnh hệ thống Android (~1.5GB, chỉ một lần)</li>
+      <li>Cấu hình tăng tốc phần cứng & mạng</li>
+      <li>Sau khi hoàn tất, nhấp đúp APK hoặc icon Desktop để mở ngay</li>
+    </ul>
+  </div>
+
+  <!-- 底部版权 -->
+  <div class="footer">Powered by RoutineMiku · v<span id="ver"></span></div>
+</div>
+
+<script src="splash.js"></script>
+</body>
+</html>
